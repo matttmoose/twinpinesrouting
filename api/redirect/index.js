@@ -1,11 +1,10 @@
 const redirects = require("./redirects.json");
 
 module.exports = async function (context, req) {
-  const rawUrl = req.originalUrl || "/";
-  const path = new URL(rawUrl, `https://${req.headers.host}`).pathname;
-  context.log("Requested path:", path);
+  const raw = req.params.path || "/";
+  const cleanPath = `/${raw.replace(/^\/+/, "")}`;
+  context.log("Requested path:", cleanPath);
 
-  const cleanPath = `/${path.replace(/^\/+/, "")}`;
   const target = redirects[cleanPath];
 
   if (target) {
