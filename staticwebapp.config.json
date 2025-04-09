@@ -23,6 +23,10 @@
     {
       "route": "/*",
       "rewrite": "/api/redirect"
+    },
+    {
+      "route": "/styles.css",
+      "serve": "/styles.css"
     }
   ]
 }
