@@ -21,12 +21,12 @@
       "serve": "/contact.html"
     },
     {
-      "route": "/*",
-      "rewrite": "/api/redirect"
-    },
-    {
       "route": "/styles.css",
       "serve": "/styles.css"
+    },
+    {
+      "route": "/*",
+      "rewrite": "/api/redirect"
     }
   ]
 }
