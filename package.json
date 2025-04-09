@@ -1,10 +1,14 @@
 {
   "name": "redirect-service",
   "version": "1.0.0",
+  "description": "Simple redirector using Azure Functions",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "echo 'Nothing to build'"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {}
 }
