@@ -1,8 +1,8 @@
 {
   "routes": [
     {
-      "route": "/:path*",
-      "rewrite": "/api/redirect?path=/:path*",
+      "route": "/*",
+      "rewrite": "/api/redirect?path=/*",
       "statusCode": 302,
       "allowedRoles": [
         "anonymous"
