@@ -1,4 +1,4 @@
-const redirects = require("./redirects.json");
+const redirects = path.join(__dirname, "../redirects.json");
 
 module.exports = async function (context, req) {
   const route = req.query.path || "/";
