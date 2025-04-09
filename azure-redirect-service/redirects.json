@@ -1,0 +1,5 @@
+{
+  "/jira": "https://subaru.atlassian.net/sso-login",
+  "/365": "https://login.microsoftonline.com/",
+  "/servicenow": "https://subaru.service-now.com/ssologinpage"
+}
