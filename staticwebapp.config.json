@@ -1,4 +1,8 @@
 {
-  "route": "/:path*",
-  "rewrite": "/api/redirect?path=/:path*"
+  "routes": [
+    {
+      "route": "/:path*",
+      "rewrite": "/api/redirect?path=/:path*"
+    }
+  ]
 }
