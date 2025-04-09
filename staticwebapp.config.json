@@ -1,6 +1,14 @@
 {
   "routes": [
     {
+      "route": "/",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/favicon.ico",
+      "serve": "/favicon.ico"
+    },
+    {
       "route": "/*",
       "rewrite": "/api/redirect"
     }
