@@ -9,12 +9,8 @@
       "serve": "/favicon.ico"
     },
     {
-      "route": "/api/*",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/:path",
-      "rewrite": "/api/redirect"
+      "route": "/:path*",
+      "rewrite": "/api/redirect?path=/:path*"
     }
   ]
 }
