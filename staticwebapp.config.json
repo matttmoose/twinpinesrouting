@@ -9,6 +9,18 @@
       "serve": "/favicon.ico"
     },
     {
+      "route": "/about",
+      "serve": "/about.html"
+    },
+    {
+      "route": "/careers",
+      "serve": "/careers.html"
+    },
+    {
+      "route": "/contact",
+      "serve": "/contact.html"
+    },
+    {
       "route": "/*",
       "rewrite": "/api/redirect"
     }
