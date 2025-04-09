@@ -1,13 +1,8 @@
-const path = require("path");
-const fs = require("fs");
+const redirects = require("../../redirects.json");
 
 module.exports = async function (context, req) {
-  const route = req.params.path || "/";
-  const cleanPath = `/${route.replace(/^\/+/,"")}`;
-
-  const redirectsPath = path.join(__dirname, "../../redirects.json");
-  const redirects = JSON.parse(fs.readFileSync(redirectsPath, "utf-8"));
-
+  const route = req.query.path || "/";
+  const cleanPath = `/${route.replace(/^\/+/, "")}`;
   const target = redirects[cleanPath];
 
   if (target) {
