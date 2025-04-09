@@ -1,5 +1,5 @@
 {
-  "/jira": "https://subaru.atlassian.net/sso-login",
-  "/365": "https://login.microsoftonline.com/",
-  "/servicenow": "https://subaru.service-now.com/ssologinpage"
+  "/clm": "https://launcher.myapps.microsoft.com/api/signin/04f81056-132a-4b92-8ab1-b9b6190b112a?tenantId=80f0f133-22e9-459c-9746-9507eb1e8595",
+  "/monday": "https://launcher.myapps.microsoft.com/api/signin/9da4e9c8-8e94-4150-bab8-e8bcfcddd141?tenantId=80f0f133-22e9-459c-9746-9507eb1e8595",
+  "/onetrust": "https://launcher.myapps.microsoft.com/api/signin/9bd6a81e-58f8-49ea-bd40-45d7d1a71fef?tenantId=80f0f133-22e9-459c-9746-9507eb1e8595"
 }
